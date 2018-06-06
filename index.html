@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="import" href="./bower_components/app-layout/app-layout.html">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <custom-style>
+      <style is="custom-style">
+
+        app-drawer {
+          --app-drawer-scrim-background: rgba(0, 0, 0, 0.6);
+          --app-drawer-content-container: {
+            width:300px;
+            box-shadow:0px 25px 60px 0px rgba(0,0,0,0.4);
+          }
+          z-index:10;
+          
+        }
+
+        /* html, body {
+          margin: 0;
+          font-family: 'Roboto', 'Noto', sans-serif;
+          -webkit-font-smoothing: antialiased;
+          background: #f1f1f1;
+          max-height: 368px;
+        }
+        app-toolbar {
+          background-color: #4285f4;
+          color: #fff;
+        }
+    
+        paper-icon-button + [main-title] {
+          margin-left: 24px;
+        }
+        paper-progress {
+          display: block;
+          width: 100%;
+          --paper-progress-active-color: rgba(255, 255, 255, 0.5);
+          --paper-progress-container-color: transparent;
+        }
+        app-header {
+          @apply --layout-fixed-top;
+          color: #fff;
+          --app-header-background-rear-layer: {
+            background-color: #ef6c00;
+          };
+        }
+        app-drawer {
+          --app-drawer-scrim-background: rgba(0, 0, 0, 0.7);
+          --app-drawer-content-container: {
+            background-color: #B0BEC5;
+          }
+        }
+        sample-content {
+          padding-top: 64px;
+        } */
+
+
+      </style>
+    </custom-style>
+    
+    <app-header reveals>
+      <app-toolbar>
+        <a href="#none" id="menuOpen" onclick="drawer.toggle()">=</a>
+        <div main-title>Polymer</div>
+      </app-toolbar>
+    </app-header>
+    
+    <!-- <app-drawer id="drawer" swipe-open align="end" opened>dd</app-drawer> -->
+    <app-drawer id="drawer" swipe-open transition-duration=300>
+      <a href="#none" id="mnClose" onclick="drawer.toggle()">X</a>
+
+      <ul class="nav_mn">
+        <li><a href="#none">home</a></li>
+        <li><a href="#none">listen</a></li>
+        <li><a href="#none">mix</a></li>
+        <li><a href="#none">music</a></li>
+      </ul>
+
+    </app-drawer>
+
+    <div class="content">
+      
+      <div class="top_area">
+					<div class="swiper-container type1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="https://i.pinimg.com/564x/b1/a5/4e/b1a54ea53ff5cb88a40fc899923b21c9.jpg"></div>
+							<div class="swiper-slide"><img src="https://i.pinimg.com/564x/f5/0b/b0/f50bb0618003a280d4994df0663c4d43.jpg"></div>
+							<div class="swiper-slide"><img src="https://i.pinimg.com/564x/fa/51/84/fa5184f540d59273e95fce43fa564108.jpg"></div>
+							<div class="swiper-slide"><img src="https://i.pinimg.com/564x/e3/87/99/e38799da1c2d5288e2968eab3ca95eb5.jpg"></div>
+							<div class="swiper-slide"><img src="https://i.pinimg.com/236x/30/a9/1e/30a91e48b1299a51afcb7db063a105bf.jpg"></div>
+							<div class="swiper-slide"><img src="https://i.pinimg.com/564x/12/d3/53/12d3537cbefe969d634766b2687f60c4.jpg"></div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+
+    </div>
+
+      <div class="img_list">
+        <a href="#none" class="img_box">
+          <div class="img">
+            <img src="https://i.pinimg.com/564x/b1/a5/4e/b1a54ea53ff5cb88a40fc899923b21c9.jpg">
+          </div>
+          <div class="txt">
+            hello sdfdsf sdf sdf sdf dsfsdfdsf sdfsdfsdfsdhello sdfdsf sdf sdf sdf dsfsdfdsf sdfsdfsdfsd
+          </div>
+        </a>
+
+        <a href="#none" class="img_box">
+          <div class="img">
+            <img src="https://i.pinimg.com/564x/f5/0b/b0/f50bb0618003a280d4994df0663c4d43.jpg">
+          </div>
+          <div class="txt">
+            hello sdfdsf sdf sdf sdf dsfsdfdsf sdfsdfsdfsdhello sdfdsf sdf sdf sdf dsfsdfdsf sdfsdfsdfsd
+          </div>
+        </a>
+
+        <a href="#none" class="img_box">
+          <div class="img">
+            <img src="https://i.pinimg.com/564x/fa/51/84/fa5184f540d59273e95fce43fa564108.jpg">
+          </div>
+          <div class="txt">
+            hello sdfdsf sdf sdf sdf dsfsdfdsf sdfsdfsdfsdhello sdfdsf sdf sdf sdf dsfsdfdsf sdfsdfsdfsd
+          </div>
+        </a>
+
+        <a href="#none" class="img_box">
+          <div class="img">
+            <img src="https://i.pinimg.com/564x/e3/87/99/e38799da1c2d5288e2968eab3ca95eb5.jpg">
+          </div>
+          <div class="txt">
+            hello sdfdsf sdf sdf sdf dsfsdfdsf sdfsdfsdfsdhello sdfdsf sdf sdf sdf dsfsdfdsf sdfsdfsdfsd
+          </div>
+        </a>
+
+        <a href="#none" class="img_box">
+          <div class="img">
+            <img src="https://i.pinimg.com/236x/30/a9/1e/30a91e48b1299a51afcb7db063a105bf.jpg">
+          </div>
+          <div class="txt">
+            hello sdfdsf sdf sdf sdf dsfsdfdsf sdfsdfsdfsdhello sdfdsf sdf sdf sdf dsfsdfdsf sdfsdfsdfsd
+          </div>
+        </a>
+
+        <a href="#none" class="img_box">
+          <div class="img">
+            <img src="https://i.pinimg.com/564x/12/d3/53/12d3537cbefe969d634766b2687f60c4.jpg">
+          </div>
+          <div class="txt">
+            hello sdfdsf sdf sdf sdf dsfsdfdsf sdfsdfsdfsdhello sdfdsf sdf sdf sdf dsfsdfdsf sdfsdfsdfsd
+          </div>
+        </a>
+
+      </div>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+
+	<!-- swiper Js -->
+	<script src="js/swiper-4.3.2.min.js"></script> 
+	<script src="js/TweenMax.min.js"></script>
+  <script src="js/index.js"></script>
+  
+
+</body>
+</html>
