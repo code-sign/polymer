@@ -61,4 +61,18 @@ $('#menuOpen').click(function(){
 
 
 
+$(document).ready(function () {
+    skrollr.init({
+      smoothScrolling: true,
+    });
+  });
   
+$(window).scroll(function(){
+  var winSc = $(window).scrollTop();
+  if(winSc > 0){
+    $('.top_info').addClass('fix');
+  } else {
+    $('.top_info').removeClass('fix');
+  }
+
+});
