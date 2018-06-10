@@ -15,6 +15,8 @@
   <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
   <link rel="import" href="bower_components/app-layout/app-layout.html">
 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="style.css">
@@ -78,14 +80,22 @@
     
     <app-header reveals>
       <app-toolbar>
-        <a href="#none" id="menuOpen" onclick="drawer.toggle()">=</a>
+        <a href="#none" id="menuOpen" onclick="drawer.toggle()">
+            <i class="material-icons">
+              menu
+              </i>
+        </a>
         <!-- <div main-title>Polymer</div> -->
       </app-toolbar>
     </app-header>
     
     <!-- <app-drawer id="drawer" swipe-open align="end" opened>dd</app-drawer> -->
     <app-drawer id="drawer" swipe-open transition-duration=300>
-      <a href="#none" id="mnClose" onclick="drawer.toggle()">X</a>
+      <a href="#none" id="mnClose" onclick="drawer.toggle()">
+          <i class="material-icons">
+            close
+            </i>
+      </a>
 
       <ul class="nav_mn">
         <li><a href="#none">home</a></li>
