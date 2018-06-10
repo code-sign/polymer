@@ -1,13 +1,13 @@
 var swiper = new Swiper('.swiper-container.type1', {
-    // effect: 'coverflow',
-    freeMode: true,
+    effect: 'coverflow',
+    // freeMode: true,
     grabCursor: true,
-    // centeredSlides: true,
+    centeredSlides: true,
     slidesPerView: 'auto',
     coverflowEffect: {
         rotate: 50,
         stretch: 0,
-        depth: 180,
+        depth: 380,
         modifier: 1,
         slideShadows : true,
     },
@@ -15,7 +15,7 @@ var swiper = new Swiper('.swiper-container.type1', {
         el: '.swiper-pagination',
     },
     loop:true,
-    spaceBetween: 10,
+    spaceBetween: 40,
 });
 
 
