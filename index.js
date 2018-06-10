@@ -88,7 +88,7 @@ $(window).scroll(function(){
       'height':dfScale-winSc/4+'px',
     });
 
-    $('.tit').css({
+    $('.top_info .tit').css({
       'fontSize':dfFont-winSc/10+'px',
       'opacity': dfOpa1-winSc/85
     });
