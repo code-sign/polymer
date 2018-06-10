@@ -80,36 +80,25 @@
     
     <app-header reveals>
       <app-toolbar>
-        <a href="#none" id="menuOpen" onclick="drawer.toggle()">
-            <i class="material-icons">
-              menu
-              </i>
-        </a>
 
-        <div class="top_info"
-        data-0="height:170px;background:rgb(238,238,238);" 
-        data-170="height:80px;background:rgb(255,255,255);"
-        >
-          <p class="tit"
-            data-0="font-size:30px"
-            data-170="font-size:20px"
-          >
+
+        <div class="top_info">
+          <p class="tit">
               김송희님
-              <span
-              data-0="opacity:1"
-              data-170="opacity:0"
-              >
+              <span>
               ,<br>
                 안녕하세요.
               </span>
           </p>
-          <p class="logo">Logo</p>
+
+          <a href="#none" class="menu" id="menuOpen" onclick="drawer.toggle()">
+              <i class="material-icons">
+                menu
+                </i>
+          </a>
   
           <div class="menu_ico">
-            <div class="df_ico"
-            data-0="transform:translateX(0px)"
-            data-170="transform:translateX(-60px)"
-            >
+            <div class="df_ico">
                 <a href="#none" class="ico">
                   <i class="material-icons">
                       favorite_border
@@ -122,10 +111,7 @@
                   </a>
             </div>
   
-            <div class="profile"
-            data-0="top:45px;transform:scale(1) translateX(0px);background:rgb(255,255,255);"
-            data-170="top:-20px;transform:scale(0.6) translateX(35px);background:rgb(238,238,238);"
-            >
+            <div class="profile">
               <i class="material-icons">
               person
               </i>
@@ -259,7 +245,6 @@
 
 	<!-- swiper Js -->
   <script src="js/swiper-4.3.2.min.js"></script> 
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.11/skrollr.min.js'></script>
   
 	<script src="js/TweenMax.min.js"></script>
   <script src="index.js"></script>

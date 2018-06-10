@@ -61,14 +61,45 @@ $('#menuOpen').click(function(){
 
 
 
-$(document).ready(function () {
-    skrollr.init({
-      smoothScrolling: true,
-    });
-  });
-  
+
+
+  // scroll event
+  //기존 포지션 저장
+  var topInfoH = $('.top_info').outerHeight();
+  var dfPosR = 0;
+  var proPosT = 40;
+  var dfScale = 70;
+  var dfFont = 30;
+  var dfOpa1 = 1;
+  var dfOpa0 = 0;
+  var menuPosT = -20;
+
+
 $(window).scroll(function(){
   var winSc = $(window).scrollTop();
+
+  //일정 높이 까지만 실행
+  if(winSc < 100){
+    $('.top_info').css('height',topInfoH-winSc/1.4+'px');
+    $('.df_ico').css('right',dfPosR+winSc/1.3+'px');
+    $('.profile').css({
+      'top':proPosT-winSc/2+'px',
+      'width':dfScale-winSc/4+'px',
+      'height':dfScale-winSc/4+'px',
+    });
+
+    $('.tit').css({
+      'fontSize':dfFont-winSc/10+'px',
+      'opacity': dfOpa1-winSc/85
+    });
+
+    $('.menu').css({
+      'opacity':dfOpa0+winSc/100,
+      'top':menuPosT+winSc/2.5
+    });
+
+  }
+
   if(winSc > 0){
     $('.top_info').addClass('fix');
   } else {
