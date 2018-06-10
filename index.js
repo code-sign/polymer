@@ -15,7 +15,7 @@ var swiper = new Swiper('.swiper-container.type1', {
         el: '.swiper-pagination',
     },
     loop:true,
-    spaceBetween: 40,
+    spaceBetween: 30,
 });
 
 
